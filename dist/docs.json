@@ -1,0 +1,112 @@
+{
+  "api": {
+    "name": "MaslAdacPlugin",
+    "slug": "masladacplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "echo",
+        "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "echo"
+      },
+      {
+        "name": "login",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "login"
+      },
+      {
+        "name": "isUserLoggedIn",
+        "signature": "() => Promise<{ value: boolean; }>",
+        "parameters": [],
+        "returns": "Promise<{ value: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "isuserloggedin"
+      },
+      {
+        "name": "getAccessToken",
+        "signature": "() => Promise<{ value: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "getaccesstoken"
+      },
+      {
+        "name": "refreshToken",
+        "signature": "() => Promise<{ value: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "refreshtoken"
+      },
+      {
+        "name": "getProfile",
+        "signature": "() => Promise<{ value: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "getprofile"
+      },
+      {
+        "name": "logout",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "logout"
+      },
+      {
+        "name": "addListener",
+        "signature": "(event: \"didLogin\" | \"didLogOut\" | \"dbSessionAuthenticationError\" | \"dbSessionAuthenticationRequiresLogin\", callback: () => void) => void",
+        "parameters": [
+          {
+            "name": "event",
+            "docs": "",
+            "type": "'didLogin' | 'didLogOut' | 'dbSessionAuthenticationError' | 'dbSessionAuthenticationRequiresLogin'"
+          },
+          {
+            "name": "callback",
+            "docs": "",
+            "type": "() => void"
+          }
+        ],
+        "returns": "void",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "addlistenerdidlogin--didlogout--dbsessionauthenticationerror--dbsessionauthenticationrequireslogin"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
