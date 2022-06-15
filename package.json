@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://ramoncuni@bitbucket.org/coaraco/msal-adac.git"
+    "url": "https://github.com/coaraco/msal-adac"
   },
   "bugs": {
-    "url": "https://github.com/ADAC-Mobile/masl-adac-plugin/issues"
+    "url": "https://github.com/coaraco/msal-adac/issues"
   },
   "keywords": [
     "capacitor",

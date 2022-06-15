@@ -5,8 +5,13 @@ Layer between adac-core-ios and capacitor
 ## Install
 
 ```bash
-npm install @coara/masl-adac-plugin
+npm install -S git+https://github.com/coaraco/msal-adac
 npx cap sync
+```
+
+## USAGE
+```typescript
+import { MaslAdac } from 'masl-adac-plugin';
 ```
 
 ## API
