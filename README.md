@@ -1,4 +1,4 @@
-# @coara/masl-adac-plugin
+# msal-adac-plugin
 
 Layer between adac-core-ios and capacitor
 
@@ -14,6 +14,13 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`login()`](#login)
+* [`isUserLoggedIn()`](#isuserloggedin)
+* [`getAccessToken()`](#getaccesstoken)
+* [`refreshToken()`](#refreshtoken)
+* [`getProfile()`](#getprofile)
+* [`logout()`](#logout)
+* [`addListener('didLogin' | 'didLogOut' | 'dbSessionAuthenticationError' | 'dbSessionAuthenticationRequiresLogin', ...)`](#addlistenerdidlogin--didlogout--dbsessionauthenticationerror--dbsessionauthenticationrequireslogin)
 
 </docgen-index>
 
@@ -31,6 +38,82 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 | **`options`** | <code>{ value: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+--------------------
+
+
+### login()
+
+```typescript
+login() => Promise<void>
+```
+
+--------------------
+
+
+### isUserLoggedIn()
+
+```typescript
+isUserLoggedIn() => Promise<{ value: boolean; }>
+```
+
+**Returns:** <code>Promise&lt;{ value: boolean; }&gt;</code>
+
+--------------------
+
+
+### getAccessToken()
+
+```typescript
+getAccessToken() => Promise<{ value: string; }>
+```
+
+**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+--------------------
+
+
+### refreshToken()
+
+```typescript
+refreshToken() => Promise<{ value: string; }>
+```
+
+**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+--------------------
+
+
+### getProfile()
+
+```typescript
+getProfile() => Promise<{ value: string; }>
+```
+
+**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+--------------------
+
+
+### logout()
+
+```typescript
+logout() => Promise<void>
+```
+
+--------------------
+
+
+### addListener('didLogin' | 'didLogOut' | 'dbSessionAuthenticationError' | 'dbSessionAuthenticationRequiresLogin', ...)
+
+```typescript
+addListener(event: "didLogin" | "didLogOut" | "dbSessionAuthenticationError" | "dbSessionAuthenticationRequiresLogin", callback: () => void) => void
+```
+
+| Param          | Type                                                                                                               |
+| -------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **`event`**    | <code>'didLogin' \| 'didLogOut' \| 'dbSessionAuthenticationError' \| 'dbSessionAuthenticationRequiresLogin'</code> |
+| **`callback`** | <code>() =&gt; void</code>                                                                                         |
 
 --------------------
 
