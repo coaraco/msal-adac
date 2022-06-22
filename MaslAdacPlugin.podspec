@@ -15,5 +15,6 @@ Pod::Spec.new do |s|
   s.dependency 'Capacitor'
   s.dependency 'ADAC-Core'
   s.dependency 'ADAC-LoginAndProfileComponent'
+  s.static_framework = true
   s.swift_version = '5.1'
 end
